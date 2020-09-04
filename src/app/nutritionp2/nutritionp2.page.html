@@ -1,0 +1,57 @@
+<ion-content>
+  <ion-item>
+    <ion-img src="assets/images/medalsheet.png"></ion-img>
+  </ion-item>
+  <ion-card class="nutritionAssesDetailsCard">
+    <ion-grid class="nutritionAssesDetailsCard">
+      <ion-row>
+        <ion-item>
+          <ion-label text-wrap>Do you eat breakfast everyday? </ion-label>
+          <ion-select value="Yes" interface="popover" style="padding-left: 83px">
+            <ion-select-option value="Yes">Yes</ion-select-option>
+            <ion-select-option value="No">No</ion-select-option>
+            <ion-select-option value="times">2-4 times a week</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+      </ion-row>
+
+      <ion-row>
+        <ion-item>
+          <ion-label text-wrap>How many litres of water you consume in a day? </ion-label>
+          <ion-select value="1" interface="popover">
+            <ion-select-option value="1">1-2 litres</ion-select-option>
+            <ion-select-option value="2">2-4 litres</ion-select-option>
+            <ion-select-option value="3">More than 4 litres</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-row>
+
+      <ion-row>
+        <ion-item>
+          <ion-label text-wrap>How often do you eat junk food like burgers, fries, pizzas etc </ion-label>
+          <ion-select value="1" interface="popover">
+            <ion-select-option value="1">1-2 times a week</ion-select-option>
+            <ion-select-option value="2">2-3 times a week</ion-select-option>
+            <ion-select-option value="3"> More than 3 times a week</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item lines="none">
+          <ion-label text-wrap>What time do you have your dinner? </ion-label>
+          <ion-select value="1" interface="popover">
+            <ion-select-option value="1">7 - 8 pm</ion-select-option>
+            <ion-select-option value="2">8 - 9 pm</ion-select-option>
+            <ion-select-option value="3">after 9 pm </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  
+  <div class="button">
+    <ion-button size="default" (click)="goToNutritionPage3()">Next</ion-button>
+  </div>
+</ion-content>

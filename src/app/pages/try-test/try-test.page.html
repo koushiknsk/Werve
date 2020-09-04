@@ -1,0 +1,78 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My cmpObjs</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button expand="block" (click) = "aurthorization()">Sign-In With Google </ion-button>
+  <ion-button expand="block" (click) = "getTSteps()"> Steps </ion-button>
+  <ion-input [(ngModel)]="steps"></ion-input>
+</ion-content> -->
+
+
+<ion-content>
+  <!-- <ion-img src="assets/images/member_enrollment_logo.png.ong"></ion-img> -->
+
+  <!-- <ion-card class="googleCard">
+    <img src="assets/images/WerveFitnessDataPic.png" />
+    <ion-grid class="myOverlay">
+      <ion-row>
+        <ion-col id="hDist">DISTANCE</ion-col>
+        <ion-col id="hCal">CALORIES</ion-col>
+        <ion-col id="hSleep">SLEEP</ion-col>
+      </ion-row>
+      <ion-row class="values">
+        <ion-col>2.12 km</ion-col>
+        <ion-col>128 cal</ion-col>
+        <ion-col id="vSleep">7 hrs</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card> -->
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Claims Trends for HNI Members</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChartLine></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Avg. Claim count for Wellness participants</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChartBar></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Avg. Claim amount comparision for Wellness participants</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChartBarOne></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button [routerLink]="['/home/home']">Go to Home</ion-button>
+
+</ion-content>
+
+
+
+
+
+<!-- ************************** V-1 ************************** -->
+
+  <!-- <ion-button expand="block" (click) = "nativeLogin()"> native login </ion-button> -->
+  <!-- <ion-input [(ngModel)]="idToken"></ion-input> -->
+  
+  <!-- <ion-button expand="block" (click) = "nativeGet()"> native get </ion-button>
+  <ion-button expand="block" (click) = "myPost()"> native post </ion-button> -->
+  <!-- <ion-button expand="block" (click) = "myGet()"> web get </ion-button>
+  <ion-button expand="block" (click) = "myPost()"> web post </ion-button> -->
+  
+  <!-- <ion-button expand="block" (click) = "getTodaySteps()"> get Steps </ion-button> -->
+    <!-- <ion-list>
+    <ion-item *ngFor="let step of steps">{{step}}</ion-item>
+  </ion-list> -->

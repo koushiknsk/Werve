@@ -1,0 +1,61 @@
+ion-content{
+    --background: transparent;
+}
+
+.background{
+    height: 48%;
+    background: url('../../assets/images/run.png') center;
+    background-size: cover;
+}
+
+ion-item.username,ion-item.password{
+    font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; 
+      //color: aqua;a
+      color: white;
+    --background: transparent;
+}
+
+ion-item.TnC{
+    font-family: Verdana, Geneva, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; 
+      //color: aqua;a
+      color: white;
+    --background: transparant;    
+}
+
+ion-button{
+    font-family: Verdana, Geneva, sans-serif; font-size: 20px;  font-weight: bold;
+      color: white;      
+      width: 80%;
+      margin: auto auto;  
+  }
+
+ion-checkbox{    
+    margin-right: 2%;
+}
+ion-grid{
+    --background: transparent;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    bottom: 5%;
+  }
+
+  h2{
+    font-family: Verdana, Geneva, sans-serif; font-size: 35px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; 
+    //color: aqua;a
+    color: white;
+}
+
+p{
+    font-family: Verdana, Geneva, sans-serif; font-size: 20px; font-style: italic ; font-variant: normal ; font-weight: 700; line-height: 20px; 
+    //color: aqua;a
+    color: white;
+}
+span{
+  font-family: Verdana, Geneva, sans-serif;  
+    //color: aqua;a
+    color: white;
+}
+ion-input{
+  color: black;
+}

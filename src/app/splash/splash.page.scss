@@ -1,0 +1,45 @@
+ion-content{
+    --background : linear-gradient( rgb(129, 217, 236) 80%, white 30%);
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20%;
+    
+    color: #ffffff;
+}
+
+div.img{
+    padding: 10%;
+    align-items: center;    
+}
+
+ion-item{
+    padding: 0%;
+    margin: 0%;
+    background-color: transparent;
+}
+
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+div.button{
+    padding-top: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
+    color:#3880ff;
+    //font-size: 5%;
+
+}
+
+ion-button{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    //margin: 10%;
+
+}

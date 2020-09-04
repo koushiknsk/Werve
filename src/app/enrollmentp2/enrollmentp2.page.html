@@ -1,0 +1,196 @@
+<ion-content>
+
+  <ion-toolbar style="opacity:0.5;">
+    <ion-title>
+      SET-UP YOUR HEALTH PROFILE
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-grid style="width:40%;" *ngIf="isOneVisible">
+    <ion-row style="height: 80%">
+      <ion-col>
+        <ion-img src="assets/images/Details.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div id=nv class="nv">
+    <ion-card class="nv" *ngIf="isOneVisible">
+      <!-- enrollement one data -->
+      <ion-list-header>
+        BMI Details
+      </ion-list-header>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Height.png">
+        </ion-avatar>
+        <ion-label>
+          <h2>Enter your Height</h2>
+        </ion-label>
+        <ion-input readonly slot="end">162 Cm</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Weight.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Enter your Weight</h2>
+        </ion-label>
+        <ion-input readonly slot="end">80 Kg</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Waist.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Enter your Waist</h2>
+        </ion-label>
+        <ion-input readonly slot="end">32 Inches</ion-input>
+      </ion-item>
+
+      <!-- enrollment two value -->
+      <ion-list-header>
+        Workout Structure
+      </ion-list-header>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Exercise.png">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>How many days in a week do you exercise ?</h2>
+        </ion-label>
+        <ion-input readonly slot="end">3 Days</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Blood Pressure.png">
+        </ion-avatar>
+        <ion-grid>
+          <ion-row>
+            <ion-label>
+              <h2 text-wrap>Please tell us your blood pressure</h2>
+            </ion-label>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-input placeholder="Systolic (mmHG)" readonly></ion-input>
+            </ion-col>
+            <ion-col>
+              <ion-input placeholder="Diastolic (mmHG)" readonly></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-card>
+  </div>
+
+  <ion-grid *ngIf="isOneVisible">
+    <ion-row>
+
+      <ion-col>
+        <ion-button type="submit" expand="block" (click)="enrollmentOne()">Next</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- card 2 -->
+  <div id=nv class="nv">
+  <ion-card *ngIf="isTwoVisible">
+    <ion-list>
+      <!-- enrollment page 3 details -->
+      <ion-list-header>
+        Other Habits
+      </ion-list-header>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Smoking.png">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>How many cigarettes do you smoke in a day ?</h2>
+        </ion-label>
+        <ion-input readonly slot="end">3</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Alcohol.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>How many alcoholic drinks you consume per week ?</h2>
+        </ion-label>
+        <ion-input readonly slot="end">3</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Mood.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>Please tell us your mood in last month</h2>
+        </ion-label>
+        <ion-input readonly slot="end">Very Positive</ion-input>
+      </ion-item>
+
+      <!-- enrollement page 4 details -->
+      <ion-list-header>
+        Food Habits
+      </ion-list-header>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Whole Grains.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>Whole Grains</h2>
+        </ion-label>
+        <ion-input readonly slot="end">1</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Cholesterol.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>Low Fat</h2>
+        </ion-label>
+        <ion-input readonly slot="end">2</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="assets/images/Lean_Meat.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>Lean Meat</h2>
+        </ion-label>
+        <ion-input readonly slot="end">2</ion-input>
+      </ion-item>
+
+      <ion-item lines=none>
+        <ion-avatar slot="start">
+          <img src="assets/images/exercise_two.png">
+        </ion-avatar>
+        <ion-label>
+          <h2 text-wrap>Salty Food</h2>
+        </ion-label>
+        <ion-input readonly slot="end">2</ion-input>
+        </ion-item>
+    </ion-list>
+  </ion-card>
+  </div>
+
+  <ion-grid *ngIf="isTwoVisible">
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block" (click)="oneBack()">Back</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button type="submit" expand="block" [routerLink]="['/home/home']">Next</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

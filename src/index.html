@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
+
+  <base href="/" />
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+  <script type='text/javascript'>
+    google.charts.load('current', {'packages':['annotatedtimeline']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Steps Taken');
+      data.addRows([
+        [new Date(2019, 7 ,1), 1408],
+        [new Date(2019, 7 ,2), 1667],
+        [new Date(2019, 7 ,3), 2004],
+        [new Date(2019, 7 ,4), 1773],
+        [new Date(2019, 7 ,5), 2463],
+        [new Date(2019, 7 ,6), 1242],
+        [new Date(2019, 7 ,7), 2004],
+        [new Date(2019, 7 ,8), 1773],
+        [new Date(2019, 7 ,9), 2463],
+        [new Date(2019, 7 ,10), 1242],
+        [new Date(2019, 7 ,11), 2004],
+        [new Date(2019, 7 ,12), 1773],
+        [new Date(2019, 7 ,13), 2463],
+        [new Date(2019, 7 ,14), 1242],
+        [new Date(2019, 7 ,15), 2004],
+        [new Date(2019, 7 ,16), 1773],
+        [new Date(2019, 7 ,17), 2463],
+        [new Date(2019, 7 ,18), 1242],
+        [new Date(2019, 7 ,19), 2004],
+        [new Date(2019, 7 ,20), 1773],
+        [new Date(2019, 7 ,21), 2463],
+        [new Date(2019, 7 ,22), 1242]
+
+      ]);
+
+      var chart = new google.visualization.AnnotatedTimeLine(document.getElementById('chart_div'));
+      chart.draw(data, {displayAnnotations: false,legendPosition:'newRow'});
+    }
+  </script>
+</head>
+
+<body style="top:4%; max-height: 96%">
+  <app-root></app-root>
+</body>
+
+</html>

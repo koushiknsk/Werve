@@ -1,0 +1,54 @@
+<ion-content>  
+  <div class="background">
+    <ion-img src="../../assets/images/Background-2.png" style="width:100%';height:100%; ; z-index: -10;"></ion-img>
+    <ion-grid>
+        <ion-row style="padding-bottom:40%; color: white;">
+            <ion-col  class="ion-align-self-center">
+              <p style="padding-left: 10px; padding-right: 10px">"Each new day is a new opportunity to improve yourself. Take it. And make the most of it."</p>         
+            </ion-col>
+          </ion-row>
+        <ion-row style="padding-bottom:10%;">
+            <ion-col  class="ion-align-self-center">
+              <h2>Login</h2>         
+            </ion-col>
+          </ion-row>
+      <ion-row>
+        <ion-col class="ion-align-self-end">
+          <ion-item class="username">
+            <ion-label style="text-align: center" position="floating" value="Username">
+              <ion-icon name="contact"></ion-icon>
+              Username
+            </ion-label>
+            <ion-input style="text-align: center" type="text" [(ngModel)]="username"></ion-input>
+          </ion-item>
+          <ion-item class="password">
+            <ion-label style="text-align: center" position="floating">
+              <ion-icon name="key"></ion-icon>
+              Password
+            </ion-label>
+            <ion-input style="text-align: center" type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col  class="ion-align-self-center">
+          <ion-item style="text-align: center" class="TnC" lines="none ">
+            <ion-label  color="white">Please read and accept Terms & Conditions</ion-label>
+            <ion-checkbox slot="end"></ion-checkbox>
+          </ion-item>          
+        </ion-col>
+      </ion-row>
+      <ion-row>
+      
+      <ion-col class="ion-align-self-center">
+        <ion-button expand="block" shape="round"
+          class="ion-align-self-center" (click)="login()">Submit</ion-button>
+        <span style="color:white" (click)="redirectToRegiister()">Create new account</span>         
+      </ion-col>
+      
+      </ion-row>
+    </ion-grid>  
+  </div>
+
+</ion-content>

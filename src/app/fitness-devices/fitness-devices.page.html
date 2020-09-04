@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-item>
+    <ion-img src="assets/images/medalsheet.png"></ion-img>
+  </ion-item>
+<ion-card>  
+  <div style="text-align: center">
+    <p> Pair your fitness devices</p>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 col-md-4 col-xl-3>        
+        <div class="image-container" (click)="authorize()" [style.background-image]="'url(assets/images/GoogleFit.png)'">
+        </div>
+      </ion-col>
+      <ion-col col-6 col-md-4 col-xl-3>
+        <div class="image-container" [style.background-image]="'url(assets/images/Fitbit.png)'">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="padding-bottom: 20%">
+      <ion-col col-6 col-md-4 col-xl-3>
+        <div class="image-container" [style.background-image]="'url(assets/images/applelogo.png)'">
+        </div>
+      </ion-col>
+      <ion-col col-6 col-md-4 col-xl-3>
+        <div class="image-container" [style.background-image]="'url(assets/images/galaxy.jpg)'">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>        
+</ion-card>
+</ion-content>

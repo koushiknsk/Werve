@@ -1,0 +1,94 @@
+<ion-content>
+
+  <div class="mainContainer">
+    <div class="status-grid">
+        <ion-item lines="none">
+            <ion-img src="assets/images/medalsheet.png"></ion-img>
+          </ion-item>
+    </div>
+  </div>
+
+  
+    <ion-card>
+      <div>
+        <p>
+          Recommended goals are available only when you have completed your health check. Your data will be kept
+          confidential and help us to improve your health </p>
+      </div>
+      <div>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="bed"></ion-icon>
+          <ion-label >Improve your Sleep</ion-label>
+          <ion-toggle slot="end" (ionChange)="updateToggleSet(1)"></ion-toggle>
+        </ion-item>
+        <div  *ngIf="!togg">
+        <h6 style="padding-left: 35%;font-weight:500">Plan Of Action</h6>
+          <ion-slides>   
+            <ion-slide><ion-card style="height: 90px;width:90px" ><p style="font-weight: 500" text-wrap>Wake up at consistent time.</p></ion-card> 
+              <ion-card style="height: 90px;width:90px"><p  style="font-weight: 500">Reduce long daytime naps.</p></ion-card>
+              <ion-card style="height: 90px;width:90px;align-content: center"><p style="font-weight: 500"> Cut off screen time   </p></ion-card>
+               </ion-slide>
+            <ion-slide>
+              <ion-card style="height: 90px;width:90px"><p  style="font-weight: 500">	Set a bed time  </p></ion-card></ion-slide>
+            </ion-slides>
+      </div>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="heart-half"></ion-icon>
+          <ion-label>Increase your fiber intake</ion-label>
+          <ion-toggle slot="end" ></ion-toggle>
+        </ion-item>
+      </div>
+
+    </ion-card>
+    <ion-grid  *ngIf="!togg" >
+      <ion-row>
+        
+        <ion-col><ion-img  style="width:350px;padding-left: 50px" src="assets/images/seek_expert_advice.png"></ion-img></ion-col>
+      </ion-row>
+      
+      </ion-grid>
+      <!-- <div style="padding-top: 70px" *ngIf="!togg">
+          <ion-grid>
+            <ion-row>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" 
+                  src="assets/images/backbutton.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" src="assets/images/capgeminilogo.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" 
+                  src="assets/images/forwardbutton.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+            </ion-row>
+          </ion-grid>
+        </div> -->
+  
+      <!-- <div style="padding-top: 300px" *ngIf="togg">
+          <ion-grid>
+            <ion-row>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" 
+                  src="assets/images/backbutton.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" src="assets/images/capgeminilogo.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+              <ion-col>
+                <ion-img style="width: 50%;" 
+                  src="assets/images/forwardbutton.png"></ion-img>
+              </ion-col>
+              <ion-col></ion-col>
+            </ion-row>
+          </ion-grid>
+        </div> -->
+      
+</ion-content>

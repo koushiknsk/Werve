@@ -1,0 +1,75 @@
+<ion-content>
+  <!-- <ion-img src="assets/images/WerveFitnessDataPic.png" style="top:0px;height: 100%; width:100%"></ion-img> -->
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+
+      <ion-tab-button tab='home' [routerLink]="['/home/home']" routerLinkActive="router-link-active">
+        <ion-icon name="Home"></ion-icon>
+        <ion-label >Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab='goals'>
+          <ion-icon name="radio-button-on"></ion-icon>
+          <ion-label>Targets</ion-label>
+        </ion-tab-button>
+
+      <ion-tab-button tab='rewards'>
+          <ion-icon name="trophy"></ion-icon>
+          <ion-label>Rewards</ion-label>
+        </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+    <div class="googleCard">
+    <img src="assets/images/WerveFitnessDataPic.png" />
+    <ion-grid class="myOverlay">
+
+      <ion-row>
+        <ion-col id="hDist">DISTANCE(kms)</ion-col>
+      </ion-row>
+      <ion-row class="values">
+        <ion-col>
+          <ion-input [(ngModel)]="x.distance"></ion-input>
+        </ion-col >
+      </ion-row>
+
+      <ion-row>
+        <ion-col id="hCal">CALORIES(kcal)</ion-col>
+      </ion-row>
+      <ion-row id="hCal" class="values">
+        <ion-col>
+          <ion-input [(ngModel)]="x.calories"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col id="hSleep">SLEEP</ion-col>
+      </ion-row>
+      <ion-row class="values">
+        <ion-col id="vSleep">
+          <ion-input [(ngModel)]="x.sleep"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    </div>
+    <!-- <div style="position:absolute; bottom:0; width: 100%">
+      <ion-grid>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-img style="width: 50%;" [routerLink]="['/home/home']" src="assets/images/backbutton.png"></ion-img>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-img style="width: 50%" (click)="loadData()" src="assets/images/capgeminilogo.png"></ion-img>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-img style="width: 50%;" (click)="gAuth()" src="assets/images/forwardbutton.png"></ion-img>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div> -->
+</ion-content>

@@ -1,0 +1,41 @@
+ion-content.background {
+    --background: transparent ;
+    background: url('../../assets/images/Background.png') center ;
+    background-size: cover;
+    background-repeat: no-repeat
+  }
+  
+  ion-img.capgemini {
+    padding-top:10%;
+    height: 60%;
+  }
+  
+  ion-img.heartbeat {
+    height: 10%;
+  }
+
+
+  h1{
+    font-family:  Verdana, Geneva, sans-serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: bold;  line-height: 20px;
+    color: rgb(0,112,173);
+}
+  
+  h2{
+      font-family: Verdana, Geneva, sans-serif; font-size: 35px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; 
+      //color: aqua;a
+      color: white;
+  }
+  
+  ion-button{
+    font-family: Verdana, Geneva, sans-serif; font-size: 20px;  font-weight: bold;
+      color: white;   
+      width: 80%;
+      text-align: center;     
+  }
+
+  ion-grid{
+    text-align: center;
+    width:100%;
+    position: absolute;
+    bottom: 5%;
+  }

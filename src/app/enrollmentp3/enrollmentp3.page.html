@@ -1,0 +1,132 @@
+<ion-content class="background">
+  <!-- Werve Logo -->
+  <ion-row style="height: 2px;padding-top: inherit;">
+    <ion-img style="padding-left: 145px;
+        width: auto;
+        height: 30px;" src="assets/images/werve_screen_logo.png"></ion-img>
+  </ion-row>
+  <!-- Image -->
+  <ion-row style="padding-top: 1px;padding-bottom: 0px;height: 170px">
+    <ion-img src="assets/images/HealthHabits.jpg"></ion-img>
+  </ion-row>
+  <!-- Lifestyle Habits & Wekly Food Habits -->
+  <ion-grid style="padding-top: 0px;padding-bottom: 0px">
+    <ion-list style="padding-top: 0px;padding-bottom: 0px">
+      <!-- Lifestyle Habits details -->
+      <ion-list-header style="padding-top: 0px;padding-bottom: 0px">
+        <h5 style="padding-top: 0px;margin-top: 2px;margin-bottom: 0px">Lifestyle Habits</h5>
+      </ion-list-header>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px;margin: none;"lines="none">
+          <img src="assets/images/Cigarettes.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-top: 0px;padding-bottom: 0px;padding-left: 20px">
+          <p text-wrap style="size: 3px;font-weight: 500">How many cigarettes do you smoke in a day ?</p>
+        </ion-label>
+        <ion-select [(ngModel)]="lifeStyleDetails.cigarettes" interface="popover">
+          <ion-select-option value="0">0</ion-select-option>
+          <ion-select-option value="1">1</ion-select-option>
+          <ion-select-option value="2">2</ion-select-option>
+          <ion-select-option value="3 or more">3 or more</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/Alcohol.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">How many alcoholic drinks you consume per week?</p>
+        </ion-label>
+        <ion-select [(ngModel)]="lifeStyleDetails.alcohol" interface="popover">
+          <ion-select-option value="0">0</ion-select-option>
+            <ion-select-option value="1">1</ion-select-option>
+            <ion-select-option value="2">2</ion-select-option>
+            <ion-select-option value="3 or more">3 or more</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/ExerciseLogo.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">How you have been feeling lately? </p>
+        </ion-label>
+        <ion-select [(ngModel)]="lifeStyleDetails.feeling" interface="popover">
+            <ion-select-option value="Happy">Happy</ion-select-option>
+            <ion-select-option value="Sad">Sad</ion-select-option>
+            <ion-select-option value="Moody">Moody</ion-select-option>
+          </ion-select>
+      </ion-item>
+
+      <!-- Weekly Food Habits details -->
+      <ion-list-header>
+          <h5 style="padding-top: 0px;margin-top: 2px;margin-bottom: 0px"> Weekly Food Habits</h5>
+      </ion-list-header>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+        <img src="assets/images/Wholegrains.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">Wholegrains</p>
+        </ion-label>
+        <ion-select [(ngModel)]="foodDetails.wholegrains" interface="popover">
+          <ion-select-option value="Daily">Daily</ion-select-option>
+          <ion-select-option value="2-3 times a week">2-3 times a week</ion-select-option>
+          <ion-select-option value="More than 3 times">More than 3 times</ion-select-option>
+          <ion-select-option value="More than 3 times">Never</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/Dairy.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">Dairy</p>
+        </ion-label>
+        <ion-select [(ngModel)]="foodDetails.dairy" interface="popover">
+            <ion-select-option value="Daily">Daily</ion-select-option>
+            <ion-select-option value="2-3 times a week">2-3 times a week</ion-select-option>
+            <ion-select-option value="More than 3 times">More than 3 times</ion-select-option>
+            <ion-select-option value="More than 3 times">Never</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/Fruits.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">Fruits</p>
+        </ion-label>
+        <ion-select [(ngModel)]="foodDetails.fruits" interface="popover">
+            <ion-select-option value="Daily">Daily</ion-select-option>
+            <ion-select-option value="2-3 times a week">2-3 times a week</ion-select-option>
+            <ion-select-option value="More than 3 times">More than 3 times</ion-select-option>
+            <ion-select-option value="More than 3 times">Never</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/Vegetables.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">Vegetables</p>
+        </ion-label>
+        <ion-select [(ngModel)]="foodDetails.vegetables" interface="popover">
+            <ion-select-option value="Daily">Daily</ion-select-option>
+            <ion-select-option value="2-3 times a week">2-3 times a week</ion-select-option>
+            <ion-select-option value="More than 3 times">More than 3 times</ion-select-option>
+            <ion-select-option value="More than 3 times">Never</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-top: 0px;padding-bottom: 0px" lines="none">
+          <img src="assets/images/Meat.png" style="height: 25px; width: 30px;">
+        <ion-label style="padding-left: 20px">
+            <p text-wrap style="size: 3px;font-weight: 500">Meat & Poultry</p>
+        </ion-label>
+        <ion-select [(ngModel)]="foodDetails.meatAndPoultry" interface="popover">
+            <ion-select-option value="Daily">Daily</ion-select-option>
+            <ion-select-option value="2-3 times a week">2-3 times a week</ion-select-option>
+            <ion-select-option value="More than 3 times">More than 3 times</ion-select-option>
+            <ion-select-option value="More than 3 times">Never</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+  <ion-grid style="padding-bottom: 0%;padding-top: 0%">
+      <ion-row style="position: absolute; bottom:0; width:100%; padding:0">              
+          <ion-col>
+            <div class="button">
+              <ion-button size="default" (click)="updateLifestyleFoodData()">Next</ion-button>
+            </div> 
+          </ion-col>
+        </ion-row>
+  </ion-grid>
+</ion-content>
+  
+  
