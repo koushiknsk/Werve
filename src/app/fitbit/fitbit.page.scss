@@ -1,62 +1,74 @@
-ion-header{
-    font-family: Verdana, Geneva, sans-serif; font-size: 30px;  font-weight: bold;
+ion-header {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-ion-content{
-    font-family: Verdana, Geneva, sans-serif; font-size: 16px; 
+ion-content {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
 }
 
-.image-container{
-    background-size:cover;
-    height: 40%;
-    width: 155px;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #ddd;
+.image-container {
+  background-size: cover;
+  height: 40%;
+  width: 155px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
 }
 
-ion-button{
-    font-family: Verdana, Geneva, sans-serif; font-weight: bold;
-      color: white;   
-      text-align: center;   
-      margin: auto auto;
-      left: 5%;  
-  }
-
-  .statistics{
-    font-family: Verdana, Geneva, sans-serif; font-size: 16px;  font-weight: normal;
-    position: absolute; bottom: 65%; width:100%; text-align: center; vertical-align: middle
-  }
-  ion-title{
-    font-family: Verdana, Geneva, sans-serif; font-size: 22px;  font-weight: bold;
-  }
-
-  img{
-    width:100%;
-    height:100%;
+ion-button {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: auto auto;
+  left: 5%;
 }
-  
-.googleCard{
+
+.statistics {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 65%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+ion-title {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.googleCard {
   padding-top: 20%;
-    position:relative;  
-    overflow: hidden;
-}
-  
-.myOverlay{
-  padding-top: 20%;
-      width: 100%;
-      height: 20px;
-      position: absolute;
-      z-index: 99;
-      top: 0px;
-      background: transparent;
-      color: black;
-      font-size: large;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
-.myOverlay ion-row.values{
+.myOverlay {
+  padding-top: 20%;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  background: transparent;
+  color: black;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.myOverlay ion-row.values {
   padding-bottom: 34%;
 }
 
@@ -64,9 +76,15 @@ ion-button{
 
 // }
 // #hCal{
-    
+
 // }
-#hSleep,#vSleep,#hCal{
-    //padding-left: 6%;
-    color: #ffff;
+#hSleep,
+#vSleep,
+#hCal {
+  //padding-left: 6%;
+  color: #ffff;
+}
+
+ion-col {
+  pointer-events: none;
 }
